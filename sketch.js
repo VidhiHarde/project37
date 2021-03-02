@@ -15,6 +15,11 @@ quiz.start();
 
 function draw(){
   background("pink");
+
+  if(contestantCount===4){
+    quiz.update(1);
+  }
+  
   if(gameState===1){
     quiz.play();
   }
